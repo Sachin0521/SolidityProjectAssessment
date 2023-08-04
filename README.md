@@ -13,14 +13,10 @@ To run this program, you can use Remix, an online Solidity IDE. To get started, 
 
 Once you are on the Remix website, create a new file by clicking on the "+" icon in the left-hand sidebar. Save the file with a .sol extension (e.g., CreateAToken.sol). Copy and paste the following code into the file:
 
+    // SPDX-License-Identifier: MIT
+    pragma solidity 0.8.18;
 
-
-
-// SPDX-License-Identifier: MIT
-pragma solidity 0.8.18;
-
-contract MyToken {
-
+    contract MyToken {
     // public variables here
     string public tokenName = "Mr.India";
     string public tokenAbbrv = "IND";
@@ -42,7 +38,7 @@ contract MyToken {
             tokenCreated[_address] -= _value;
         }
     }
-}
+    }
 
 ###Getting Started
 
